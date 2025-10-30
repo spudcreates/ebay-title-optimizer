@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-import OpenAI
+import openAI
 import io
 import time
 import requests
