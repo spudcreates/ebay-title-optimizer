@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import openai
 import streamlit as st
-openai.api_key = st.secrets["OPENAI_API_KEY]
+openai.api_key = st.secrets["OPENAI_API_KEY"]
 import io
 import time
 import requests
