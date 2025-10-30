@@ -1,6 +1,8 @@
 import streamlit as st
 import pandas as pd
-import openAI
+import openai
+import streamlit as st
+openai.api_key = st.secrets["OPENAI_API_KEY]
 import io
 import time
 import requests
@@ -54,11 +56,11 @@ if uploaded_file:
             """
 
             try:
-                resp = client.chat.completions.create(
+                response = client.chat.completions.create(
                     model="gpt-4o-mini",
                     messages=[
-                        {"role": "system", "content": "You are a skilled eBay SEO optimizer."},
-                        {"role": "user", "content": prompt},
+                        {"role": "system", "content": "You are a skilled eBay listing optimizer."},
+                        {"role": "user", "content": prompt}
                     ],
                     max_tokens=120,
                     temperature=0.7,
